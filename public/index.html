@@ -11,6 +11,15 @@
       type="text/css"
     />
 
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +30,9 @@
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <!-- Nav CSS -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -33,11 +45,21 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
-      <h1>hello, world</h1>
+      <!-- <div class="nav-container"> -->
+      <!-- <p>Write a new tweet</p> -->
+      <i class="fas fa-angle-double-down"></i>
+      <!-- </div> -->
     </nav>
 
-    <h1>body test</h1>
-
+    <header>
+      <div>
+        <img src="/images/profile-hex.png" />
+      </div>
+      <br />
+      <div>
+        <h2>Your Name</h2>
+      </div>
+    </header>
     <!-- Page-specific (main) content here -->
     <main class="container"></main>
   </body>
