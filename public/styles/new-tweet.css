@@ -1,16 +1,17 @@
-.new-tweet {
-  width: 600px;
+#new-tweet {
+  width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .form-top {
   display: flex;
   flex-direction: column;
   font-weight: 600;
   width: 800px;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
 }
 
 .form-top textarea {
@@ -43,5 +44,7 @@
 }
 
 .form-bottom .danger {
-  color: #e86252;
+  /* color: #e86252;
+ */
+  color: red;
 }

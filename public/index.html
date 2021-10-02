@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,600&display=swap"
       rel="stylesheet"
     />
 
@@ -38,6 +38,9 @@
 
     <!-- New Tweet CSS -->
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
+    <!-- Tweetr Feed CSS -->
+    <link rel="stylesheet" href="/styles/tweetr-feed.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -59,7 +62,7 @@
       </div>
     </nav>
 
-    <header>
+    <header class="page-header">
       <div>
         <img src="/images/profile-hex.png" />
       </div>
@@ -93,8 +96,33 @@
         <article class="single-tweet">
           <header>
             <div class="user">
+              <img
+                src="https://i.imgur.com/73hZDYK.png"
+                alt="Newton's avatar"
+              />
+              <h4>Newton</h4>
+            </div>
+            <div class="user-tag">
+              <h4>@SirIsaac</h4>
+            </div>
+          </header>
+          <p class="user-tweet">the tweet contents</p>
+          <footer>
+            <div class="date">
+              <p>date</p>
+            </div>
+            <div class="icons">
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+        <article class="single-tweet">
+          <header>
+            <div class="user">
               <i></i>
-              <h4>Name</h4>
+              <h4>Newton</h4>
             </div>
             <div class="user-tag">
               <h4>@username</h4>
@@ -106,9 +134,9 @@
               <p>date</p>
             </div>
             <div class="icons">
-              <i>icon1</i>
-              <i>icon2</i>
-              <i>icon3</i>
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
             </div>
           </footer>
         </article>
