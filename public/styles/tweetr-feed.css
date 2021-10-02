@@ -16,10 +16,12 @@
   width: 800px;
   border: 3px solid black;
   padding: 1em;
+  margin: 1em 0;
 }
 
 .single-tweet:hover {
   box-shadow: 5px 10px rgba(94, 118, 197, 0.5);
+  transition: 0.3s ease-in-out;
 }
 
 .single-tweet header {
@@ -27,12 +29,19 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 1em;
+  padding: 0 0.2em;
+  margin-bottom: 1em;
+}
+
+.single-tweet header .user {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .single-tweet header .user h4 {
   font-weight: 300;
-  margin-top: 0;
+  margin: 0 0 0 10px;
 }
 
 .single-tweet header .user-tag h4 {
@@ -68,6 +77,6 @@
 
 .single-tweet footer .icons i:hover {
   color: #e86252;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in;
   cursor: pointer;
 }
