@@ -8,6 +8,8 @@ nav {
   justify-content: space-between;
   padding: 0 1.5em;
   z-index: 10;
+  position: sticky;
+  top: 0;
 }
 
 span {
