@@ -1,0 +1,43 @@
+.new-tweet {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-top {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  width: 800px;
+  border-bottom: 2px solid black;
+}
+
+.form-top textarea {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: black;
+  resize: none;
+  margin-top: 10px;
+}
+
+.form-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+  margin-top: 10px;
+}
+
+.form-bottom button {
+  border: none;
+  background-color: #4056a1;
+  color: white;
+  padding: 5px 10px;
+}
+
+.form-bottom button:hover {
+  cursor: pointer;
+  background-color: #314688;
+}
