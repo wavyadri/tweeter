@@ -1,6 +1,6 @@
 nav {
   height: 120px;
-  width: 100%;
+  width: 100;
   background-color: #4056a1;
   color: #fff;
   display: flex;
@@ -10,17 +10,18 @@ nav {
   z-index: 10;
 }
 
-nav span {
+span {
   font-family: 'Bungee', cursive;
   font-size: 2em;
 }
 
-i {
-  font-size: 3em;
-  color: red;
-  z-index: 10000;
-}
-/* nav .nav-container {
+.nav-container {
   display: flex;
-  font-size: 3em;
-} */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-container p {
+  margin: 0;
+}
