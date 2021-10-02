@@ -70,7 +70,7 @@
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section id="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets/">
           <div class="form-top">
@@ -88,6 +88,30 @@
             >
           </div>
         </form>
+      </section>
+      <section id="tweetr-feed">
+        <article class="single-tweet">
+          <header>
+            <div class="user">
+              <i></i>
+              <h4>Name</h4>
+            </div>
+            <div class="user-tag">
+              <h4>@username</h4>
+            </div>
+          </header>
+          <p class="user-tweet">the tweet contents</p>
+          <footer>
+            <div class="date">
+              <p>date</p>
+            </div>
+            <div class="icons">
+              <i>icon1</i>
+              <i>icon2</i>
+              <i>icon3</i>
+            </div>
+          </footer>
+        </article>
       </section>
     </main>
   </body>
