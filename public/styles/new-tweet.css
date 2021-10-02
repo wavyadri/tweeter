@@ -41,3 +41,7 @@
   cursor: pointer;
   background-color: #314688;
 }
+
+.form-bottom .danger {
+  color: #e86252;
+}
