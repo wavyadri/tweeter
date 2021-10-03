@@ -24,9 +24,21 @@ span {
   align-items: center;
 }
 
-.nav-container p {
+.nav-container #compose-btn {
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 15px 32px;
   margin-bottom: 10px;
 }
+
+.nav-container #compose-btn:hover {
+  cursor: pointer;
+  background-color: #314688;
+}
+/* .nav-container p {
+  margin-bottom: 10px;
+} */
 
 .nav-container i {
   color: #e86252;

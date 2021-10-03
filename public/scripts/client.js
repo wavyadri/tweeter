@@ -44,6 +44,7 @@ $(document).ready(function () {
   `;
   };
 
+  // create new tweet
   $('#tweet-form').submit((e) => {
     e.preventDefault();
 
@@ -103,5 +104,18 @@ $(document).ready(function () {
       });
   };
 
+  // toggle compose button
+  $('#compose-btn').click(() => {
+    $('#new-tweet').slideToggle();
+    if ($('#new-tweet').is(':visible')) {
+      $('#tweet-text').focus();
+    }
+  });
+
+  // starting state
+  $('#new-tweet').hide();
   loadtweets();
 });
+
+// questions
+// is it okay to set   $('#new-tweet').hide();
