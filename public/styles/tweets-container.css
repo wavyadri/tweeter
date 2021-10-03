@@ -39,8 +39,8 @@
   font-weight: 300;
   margin-left: 10px;
 }
-.single-tweet header .user- {
-  color: #696f80;
+.single-tweet header .user-tag {
+  color: rgba(94, 118, 197, 0.5);
   opacity: 0.5;
   margin-top: 0;
 }

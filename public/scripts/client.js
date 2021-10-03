@@ -43,7 +43,7 @@ $(document).ready(function () {
   `;
   };
 
-  // create new tweet
+  // new tweet button
   $('#tweet-form').submit((e) => {
     e.preventDefault();
 
@@ -76,10 +76,8 @@ $(document).ready(function () {
 
     $('#tweet-form').trigger('reset');
 
-    // post request
-    $.post('/tweets', serializedData, (response) => {
-      console.log('response from post req: ', response);
-    })
+    // post request - make new tweet
+    $.post('/tweets', serializedData)
       .done(() => {
         loadtweets();
       })
@@ -92,9 +90,7 @@ $(document).ready(function () {
   const loadtweets = () => {
     $('#error-msg').addClass('hide');
 
-    $.get('/tweets', (response) => {
-      console.log('response from get req: ', response);
-    })
+    $.get('/tweets')
       .done((response) => {
         renderTweets(response);
       })

@@ -40,12 +40,4 @@ $(document).ready(function () {
     $('#tweet-text').focus();
     $(window).scrollTop(0);
   });
-
-  // starting state
-  // $('#new-tweet').hide();
 });
-
-// questions
-// should default be hidden or shown?   $('#new-tweet').hide();
-
-// how should I make the tablet header? transparent or change color background? is it still sticky?
