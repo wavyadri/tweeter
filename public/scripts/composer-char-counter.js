@@ -35,6 +35,8 @@ $(document).ready(function () {
 
   $('#scroll-btn').click(() => {
     $(window).scrollTop(0);
+    $('#new-tweet').slideDown();
+    $('#tweet-text').focus();
   });
 
   // starting state
