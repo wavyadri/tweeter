@@ -28,15 +28,19 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop()) {
       $('#scroll-btn').fadeIn(200);
+      // $('#nav-container').css('visibility', 'hidden');
+      $('#nav-container').fadeOut(100);
     } else {
       $('#scroll-btn').fadeOut(100);
+      // $('#nav-container').css('visibility', 'visible');
+      $('#nav-container').fadeIn(100);
     }
   });
 
   $('#scroll-btn').click(() => {
-    $(window).scrollTop(0);
     $('#new-tweet').slideDown();
     $('#tweet-text').focus();
+    $(window).scrollTop(0);
   });
 
   // starting state

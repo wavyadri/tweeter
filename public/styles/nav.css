@@ -17,29 +17,43 @@ span {
   font-size: 2em;
 }
 
-.nav-container {
+#nav-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
-.nav-container #compose-btn {
+#nav-container #compose-btn {
   border: 3px solid white;
   background-color: transparent;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 20px;
   margin-bottom: 10px;
 }
 
-.nav-container #compose-btn:hover {
+#nav-container #compose-btn:hover {
   cursor: pointer;
   background-color: #314688;
 }
-/* .nav-container p {
-  margin-bottom: 10px;
-} */
 
-.nav-container i {
-  color: #e86252;
+#nav-container i {
+  /* color: #e86252; */
+  color: white;
+}
+
+/* down arrow animation */
+.fa-angle-double-down {
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 5px;
+  }
 }
