@@ -1,94 +1,87 @@
-#tweets-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+@use '_variables' as *;
 
-#tweets-container > :first-child {
-  margin-top: 0;
+#tweets-container {
+  @include flex-center-col();
+  width: 100%;
 }
 
 .single-tweet {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flex-center-col();
   align-items: flex-start;
   font-weight: 400;
   width: 100%;
-  border: 3px solid black;
+  border: 3px solid $black;
   padding: 1em;
   margin: 1em 0;
-}
 
-.single-tweet:hover {
-  box-shadow: 5px 10px rgba(94, 118, 197, 0.5);
-  transition: 0.3s ease-in-out;
-}
+  &:hover {
+    box-shadow: 5px 10px $darkbluefade;
+    transition: 0.3s ease-in-out;
+  }
 
-.single-tweet header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0 0.2em;
-  margin-bottom: 1em;
-}
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 0.2em;
+    margin-bottom: 1em;
 
-.single-tweet header .user {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
+    .user {
+      display: flex;
+      align-items: center;
+      width: 100%;
 
-.single-tweet header .user h4 {
-  font-weight: 300;
-  margin: 0 0 0 10px;
-}
+      h4 {
+        font-weight: 300;
+        margin-left: 10px;
+      }
+    }
 
-.single-tweet header .user-tag h4 {
-  color: #5e76c5;
-  opacity: 0.5;
-  margin-top: 0;
-}
+    .user-tag {
+      color: $lightblack;
+      opacity: 0.5;
+      margin-top: 0;
+    }
+  }
 
-.single-tweet .user-tweet {
-  padding: 0 1em;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-break: break-word;
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
+  // source: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+  .user-tweet {
+    padding: 0 1em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
 
-.single-tweet footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 3px solid black;
-  width: 100%;
-  font-weight: 300;
-  font-size: 0.6em;
-  padding: 0 1em;
-}
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid $black;
+    width: 100%;
+    font-weight: 300;
+    font-size: 0.6em;
+    padding: 0 1em;
 
-.single-tweet footer .date p {
-  margin-bottom: 0;
-}
+    p {
+      margin-bottom: 0;
+    }
 
-.single-tweet footer .icons i {
-  color: #4056a1;
-  margin-left: 0.4em;
-  margin-bottom: 0;
-}
-
-.single-tweet footer .icons i:hover {
-  color: #e86252;
-  transition: 0.2s ease-in;
-  cursor: pointer;
+    i {
+      color: $darkblue;
+      margin-left: 0.4em;
+      margin-bottom: 0;
+      &:hover {
+        color: $coral;
+        transition: 0.2s ease-in;
+        cursor: pointer;
+      }
+    }
+  }
 }
