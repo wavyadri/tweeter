@@ -23,6 +23,7 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+  /* width: 100vw; */
 }
 
 /*
@@ -56,4 +57,36 @@ main {
 #scroll-btn:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+.flex-wrapper {
+  max-width: 4000px;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; */
+}
+
+/* Tablet - Responsive */
+@media only screen and (min-width: 768px) {
+  .flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 4em 3em 1em 3em;
+  }
+}
+
+/* Desktop - Responsive */
+@media only screen and (min-width: 1024px) {
+  .flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* XL */
+@media only screen and (min-width: 4000px) {
+  .flex-wrapper {
+    margin: 5em auto;
+  }
 }
