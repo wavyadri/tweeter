@@ -37,7 +37,7 @@ $(document).ready(function () {
       <p class="user-tweet">${tweet.content.text} </p>
       <footer>
         <div class="date">
-          <p>${tweet.created_at}</p>
+          <p>${timeago.format(tweet.created_at)}</p>
         </div>
         <div class="icons">
           <i class="fas fa-flag"></i>
