@@ -26,16 +26,16 @@ body .flex-wrapper {
   justify-content: center;
 }
 body .flex-wrapper main {
-  width: 99%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 99%;
   margin: auto;
   background-color: #f4f1ec;
 }
 body .flex-wrapper main #scroll-btn {
-  color: white;
+  color: #f1f1f1;
   font-size: 1em;
   background-color: #e86252;
   border: none;

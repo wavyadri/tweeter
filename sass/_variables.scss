@@ -1,0 +1,17 @@
+// VARIABLES
+// Colours
+$darkblue: #4056a1;
+$lightblue: #5aa9e6;
+$coral: #e86252;
+$black: #545149;
+$offwhite: #f4f1ec;
+$white: rgb(241, 241, 241);
+
+// MIXINS
+// column flex center
+@mixin flex-center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
