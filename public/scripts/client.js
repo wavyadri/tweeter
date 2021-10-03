@@ -112,6 +112,19 @@ $(document).ready(function () {
     }
   });
 
+  // scroll to top button
+  $(window).scroll(function () {
+    if ($(this).scrollTop()) {
+      $('#scroll-btn').fadeIn(200);
+    } else {
+      $('#scroll-btn').fadeOut(100);
+    }
+  });
+
+  $('#scroll-btn').click(() => {
+    $(window).scrollTop(0);
+  });
+
   // starting state
   $('#new-tweet').hide();
   loadtweets();
