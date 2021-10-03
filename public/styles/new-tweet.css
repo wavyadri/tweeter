@@ -1,65 +1,56 @@
 #new-tweet {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin-bottom: 2em;
 }
-
-#tweet-form {
+#new-tweet #tweet-form {
   width: 100%;
 }
-
-.form-top {
+#new-tweet #tweet-form .form-top {
   display: flex;
   flex-direction: column;
   font-weight: 600;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #545149;
 }
-
-.form-top textarea {
+#new-tweet #tweet-form .form-top textarea {
   background: transparent;
   outline: none;
   border: none;
   font-size: 20px;
-  color: black;
+  color: #545149;
   resize: none;
   margin-top: 10px;
 }
-
-.form-bottom {
+#new-tweet #tweet-form .form-bottom {
   display: flex;
   justify-content: space-between;
   font-family: "Bungee", cursive;
   margin-top: 10px;
 }
-
-.form-bottom button {
+#new-tweet #tweet-form .form-bottom button {
   border: none;
   background-color: #4056a1;
-  color: white;
+  color: #f1f1f1;
   padding: 5px 10px;
 }
-
-.form-bottom button:hover {
+#new-tweet #tweet-form .form-bottom button:hover {
   cursor: pointer;
-  background-color: #314688;
+  background-color: #4056a1;
 }
-
-.form-bottom .danger {
-  /* color: #e86252;
-  */
-  color: red;
+#new-tweet #tweet-form .form-bottom .danger {
+  color: #4056a1;
 }
 
 #error-msg {
   width: 100%;
-  border: 4px solid red;
-  color: red;
+  border: 4px solid #e44d3a;
+  color: #e44d3a;
   padding: 0 10px;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 .hide {
