@@ -24,14 +24,11 @@ const data = [
   },
 ];
 
-// returns a tweet <article> element containing the entire HTML structure of the tweet
+// returns a tweet <article> element containing HTML structure of the tweet
 $(document).ready(function () {
   const renderTweets = function (tweets) {
-    // loops through tweets
     for (const tweet of tweets) {
-      // calls createTweetElement for each tweet
       const $newTweet = createTweetElement(tweet);
-      // takes return value and appends it to the tweets container
       $('#tweets-container').append($newTweet);
     }
   };
@@ -69,43 +66,37 @@ $(document).ready(function () {
   renderTweets(data);
 
   $('#tweet-form').submit((e) => {
-    // prevent default
     e.preventDefault();
 
-    // serializeData
+    // tweet validation
+    if ($('#tweet-text').val() === '') {
+      return alert('Please enter some text!');
+    }
+
+    if ($('#tweet-text').val().length > 140) {
+      return alert('Your tweet is too long');
+    }
+
+    // serialize form data into a query string
     const serializedData = $('#tweet-text').serialize();
 
     // post request
     $.post('/tweets', serializedData, (response) => {
-      console.log('response: ', response);
+      console.log('response from post req: ', response);
     })
       .done(() => {
         $('#tweet-form').trigger('reset');
+        loadtweets();
       })
       .fail((err) => {
         console.log(`Your tweet failed to send due to an error: ${err}`);
       });
   });
 
-  // questions:
-  // for our post, when we type in the text area it convert str into key value pairs
-  // which is why we need to serialize it?
-
-  // for get, we are requesting data from server which is already JSON
-  // so we don't need to do anything?
-
-  // where is server pulling tweets from?
-
-  // my get request returns 304 - is this ok or should it be 200?
-
-  // should .post be a func like .get?
-
-  // review .post and .get
-
   // get request
   const loadtweets = () => {
     $.get('/tweets', (response) => {
-      console.log('response: ', response);
+      console.log('response from get req: ', response);
     })
       .done((response) => {
         renderTweets(response);
