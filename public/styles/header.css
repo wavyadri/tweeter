@@ -22,12 +22,11 @@
 @media only screen and (min-width: 1024px) {
   .flex-wrapper {
     display: flex;
-    margin-top: 8rem;
+    margin: 3em;
   }
   .page-header {
     width: 40%;
     height: 400px;
-    margin-left: 3rem;
-    margin-right: 5rem;
+    margin-right: 7rem;
   }
 }
