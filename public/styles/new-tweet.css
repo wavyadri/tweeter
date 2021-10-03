@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1em 0;
 }
 
 .form-top {
@@ -47,4 +48,16 @@
   /* color: #e86252;
  */
   color: red;
+}
+
+#error-msg {
+  width: 100%;
+  border: 4px solid red;
+  color: red;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.hide {
+  display: none;
 }

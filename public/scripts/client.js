@@ -44,29 +44,44 @@ $(document).ready(function () {
   `;
   };
 
-  // renderTweets(data);
-
   $('#tweet-form').submit((e) => {
     e.preventDefault();
 
+    // hide error message
+    $('#error-msg').slideUp().addClass('hide').empty();
+
     // tweet validation
     if ($('#tweet-text').val() === '') {
-      return alert('Please enter some text!');
+      const $msg = $('<p>').text('Please enter text for your tweet!');
+      $('#error-msg').append($msg);
+
+      if ($('#error-msg').is(':parent')) {
+        $('#error-msg').slideDown('slow');
+      }
+      return;
+      // return $('#error-msg').removeClass('hide').append($msg);
     }
 
     if ($('#tweet-text').val().length > 140) {
-      return alert('Your tweet is too long');
+      const $msg = $('<p>').text('Your tweet is too long!');
+      $('#error-msg').append($msg);
+
+      if ($('#error-msg').is(':parent')) {
+        $('#error-msg').slideDown('slow');
+      }
+      return;
     }
 
     // serialize form data into a query string
     const serializedData = $('#tweet-text').serialize();
+
+    $('#tweet-form').trigger('reset');
 
     // post request
     $.post('/tweets', serializedData, (response) => {
       console.log('response from post req: ', response);
     })
       .done(() => {
-        $('#tweet-form').trigger('reset');
         loadtweets();
       })
       .fail((err) => {
@@ -76,6 +91,8 @@ $(document).ready(function () {
 
   // get request
   const loadtweets = () => {
+    $('#error-msg').addClass('hide');
+
     $.get('/tweets', (response) => {
       console.log('response from get req: ', response);
     })
