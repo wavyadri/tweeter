@@ -72,18 +72,48 @@ $(document).ready(function () {
     // prevent default
     e.preventDefault();
 
-    console.log('this:', this);
-
     // serializeData
     const serializedData = $('#tweet-text').serialize();
 
-    console.log(serializedData);
-
     // post request
-    const sendTweet = $.post('/tweets', serializedData, (response) => {
-      console.log(response);
-    });
-
-    // clear input field
+    $.post('/tweets', serializedData, (response) => {
+      console.log('response: ', response);
+    })
+      .done(() => {
+        $('#tweet-form').trigger('reset');
+      })
+      .fail((err) => {
+        console.log(`Your tweet failed to send due to an error: ${err}`);
+      });
   });
+
+  // questions:
+  // for our post, when we type in the text area it convert str into key value pairs
+  // which is why we need to serialize it?
+
+  // for get, we are requesting data from server which is already JSON
+  // so we don't need to do anything?
+
+  // where is server pulling tweets from?
+
+  // my get request returns 304 - is this ok or should it be 200?
+
+  // should .post be a func like .get?
+
+  // review .post and .get
+
+  // get request
+  const loadtweets = () => {
+    $.get('/tweets', (response) => {
+      console.log('response: ', response);
+    })
+      .done((response) => {
+        renderTweets(response);
+      })
+      .fail((err) => {
+        console.log(`Your tweets failed to load due to an error: ${err}`);
+      });
+  };
+
+  loadtweets();
 });
