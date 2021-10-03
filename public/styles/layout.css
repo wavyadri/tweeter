@@ -30,6 +30,12 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+.flex-wrapper {
+  max-width: 4000px;
+  display: flex;
+  justify-content: center;
+}
+
 main {
   width: 99%;
   display: flex;
@@ -59,19 +65,19 @@ main {
   transform: scale(1.1);
 }
 
-.flex-wrapper {
-  max-width: 4000px;
-  display: flex;
-  justify-content: center;
-  /* align-items: flex-start; */
-}
-
 /* Tablet - Responsive */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    margin-top: 2em;
+    width: 90%;
+  }
+
   .flex-wrapper {
     display: flex;
     flex-direction: column;
-    margin: 4em 3em 1em 3em;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -81,6 +87,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 4em 3em 1em 3em;
   }
 }
 
