@@ -1,4 +1,3 @@
-// returns a tweet <article> element containing HTML structure of the tweet
 $(document).ready(function () {
   const renderTweets = function (tweets) {
     $('#tweets-container').empty();
@@ -104,31 +103,5 @@ $(document).ready(function () {
       });
   };
 
-  // toggle compose button
-  $('#compose-btn').click(() => {
-    $('#new-tweet').slideToggle();
-    if ($('#new-tweet').is(':visible')) {
-      $('#tweet-text').focus();
-    }
-  });
-
-  // scroll to top button
-  $(window).scroll(function () {
-    if ($(this).scrollTop()) {
-      $('#scroll-btn').fadeIn(200);
-    } else {
-      $('#scroll-btn').fadeOut(100);
-    }
-  });
-
-  $('#scroll-btn').click(() => {
-    $(window).scrollTop(0);
-  });
-
-  // starting state
-  $('#new-tweet').hide();
   loadtweets();
 });
-
-// questions
-// is it okay to set   $('#new-tweet').hide();
