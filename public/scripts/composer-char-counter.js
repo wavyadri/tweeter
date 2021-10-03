@@ -28,11 +28,9 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop()) {
       $('#scroll-btn').fadeIn(200);
-      // $('#nav-container').css('visibility', 'hidden');
       $('#nav-container').fadeOut(100);
     } else {
       $('#scroll-btn').fadeOut(100);
-      // $('#nav-container').css('visibility', 'visible');
       $('#nav-container').fadeIn(100);
     }
   });
@@ -49,3 +47,5 @@ $(document).ready(function () {
 
 // questions
 // should default be hidden or shown?   $('#new-tweet').hide();
+
+// how should I make the tablet header? transparent or change color background? is it still sticky?
