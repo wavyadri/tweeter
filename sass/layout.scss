@@ -56,13 +56,15 @@ body {
 
 /* Tablet - Responsive */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .flex-wrapper {
-    display: flex;
-    flex-direction: column;
+  body {
+    .flex-wrapper {
+      display: flex;
+      flex-direction: column;
 
-    main {
-      margin-top: 2em;
-      width: 90%;
+      main {
+        margin-top: 2em;
+        width: 88%;
+      }
     }
   }
 }
