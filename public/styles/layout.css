@@ -23,7 +23,6 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
-  /* width: 100vw; */
 }
 
 /*
@@ -75,9 +74,6 @@ main {
   .flex-wrapper {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 }
 
