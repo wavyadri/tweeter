@@ -68,8 +68,22 @@ $(document).ready(function () {
 
   renderTweets(data);
 
-  ///////////////////////////////////////////////////////////////////
   $('#tweet-form').submit((e) => {
+    // prevent default
     e.preventDefault();
+
+    console.log('this:', this);
+
+    // serializeData
+    const serializedData = $('#tweet-text').serialize();
+
+    console.log(serializedData);
+
+    // post request
+    const sendTweet = $.post('/tweets', serializedData, (response) => {
+      console.log(response);
+    });
+
+    // clear input field
   });
 });
