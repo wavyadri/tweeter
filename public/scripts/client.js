@@ -59,7 +59,6 @@ $(document).ready(function () {
         $('#error-msg').slideDown('slow');
       }
       return;
-      // return $('#error-msg').removeClass('hide').append($msg);
     }
 
     if ($('#tweet-text').val().length > 140) {
