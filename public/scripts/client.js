@@ -8,6 +8,12 @@ $(document).ready(function () {
     }
   };
 
+  const escape = function (str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const createTweetElement = (tweet) => {
     return `
     <article class="single-tweet">
@@ -17,13 +23,13 @@ $(document).ready(function () {
             src=${tweet.user.avatars}
             alt="${tweet.user.name} avatar"
           />
-          <h4>${tweet.user.name} </h4>
+          <h4>${tweet.user.name}</h4>
         </div>
         <div class="user-tag">
-          <h4>${tweet.user.handle} </h4>
+          <h4>${tweet.user.handle}</h4>
         </div>
       </header>
-      <p class="user-tweet">${tweet.content.text} </p>
+      <p class="user-tweet">${escape(tweet.content.text)}</p>
       <footer>
         <div class="date">
           <p>${timeago.format(tweet.created_at)}</p>
