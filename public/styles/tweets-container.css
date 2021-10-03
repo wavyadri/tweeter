@@ -1,5 +1,5 @@
 #tweets-container {
-  width: 800px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: flex-start;
   font-weight: 400;
-  width: 800px;
+  width: 100%;
   border: 3px solid black;
   padding: 1em;
   margin: 1em 0;

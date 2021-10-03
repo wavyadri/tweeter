@@ -1,17 +1,19 @@
 #new-tweet {
-  width: 800px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1em 0;
+}
+
+#tweet-form {
+  width: 100%;
 }
 
 .form-top {
   display: flex;
   flex-direction: column;
   font-weight: 600;
-  width: 800px;
   border-bottom: 3px solid black;
 }
 
@@ -56,6 +58,7 @@
   color: red;
   padding: 0 10px;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .hide {

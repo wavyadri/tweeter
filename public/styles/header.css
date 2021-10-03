@@ -7,6 +7,7 @@
   align-items: center;
   background-color: #5aa9e6;
   background-image: url(../images/asfalt-light.png);
+  margin: 0;
 }
 
 .page-header h2 {
@@ -19,9 +20,14 @@
 
 /* Desktop - Responsive */
 @media only screen and (min-width: 1024px) {
+  .flex-wrapper {
+    display: flex;
+    margin-top: 8rem;
+  }
   .page-header {
-    width: 30%;
+    width: 40%;
     height: 400px;
-    margin: 5em 3em;
+    margin-left: 3rem;
+    margin-right: 5rem;
   }
 }
