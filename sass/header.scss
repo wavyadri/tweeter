@@ -1,17 +1,16 @@
+@use '_variables' as *;
+
 .page-header {
+  @include flex-center-col();
   height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #5aa9e6;
+  background-color: $lightblue;
   background-image: url(../images/asfalt-light.png);
   margin: 0;
-}
 
-.page-header h2 {
-  margin: 0;
-  color: white;
+  h2 {
+    margin: 0;
+    color: $white;
+  }
 }
 
 /* Tablet - Responsive */

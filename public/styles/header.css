@@ -1,17 +1,16 @@
 .page-header {
-  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 400px;
   background-color: #5aa9e6;
   background-image: url(../images/asfalt-light.png);
   margin: 0;
 }
-
 .page-header h2 {
   margin: 0;
-  color: white;
+  color: #f1f1f1;
 }
 
 /* Tablet - Responsive */
