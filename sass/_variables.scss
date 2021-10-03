@@ -10,6 +10,10 @@ $offwhite: #f4f1ec;
 $white: rgb(241, 241, 241);
 $danger: #e44d3a;
 
+// Fonts
+$font-title: 'Bungee', cursive;
+$font-body: 'Source Sans Pro', sans-serif;
+
 // MIXINS
 // column flex center
 @mixin flex-center-col {
