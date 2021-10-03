@@ -44,8 +44,8 @@ $(document).ready(function () {
   });
 
   // starting state
-  $('#new-tweet').hide();
+  // $('#new-tweet').hide();
 });
 
 // questions
-// is it okay to set   $('#new-tweet').hide();
+// should default be hidden or shown?   $('#new-tweet').hide();
