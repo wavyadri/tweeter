@@ -17,11 +17,11 @@
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .page-header {
     min-height: 30vh;
-  }
 
-  .page-header img {
-    min-height: 20vh;
-    width: auto;
+    img {
+      min-height: 20vh;
+      width: auto;
+    }
   }
 }
 
