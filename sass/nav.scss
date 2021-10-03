@@ -13,7 +13,7 @@ nav {
 }
 
 span {
-  font-family: "Bungee", cursive;
+  font-family: 'Bungee', cursive;
   font-size: 2em;
 }
 
@@ -47,13 +47,15 @@ span {
 }
 
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     bottom: 0;
   }
   50% {
     bottom: 5px;
   }
 }
+
 /* Tablet - Responsive */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   nav {
