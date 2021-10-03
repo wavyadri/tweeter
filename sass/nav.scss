@@ -1,8 +1,10 @@
+@use '_variables' as *;
+
 nav {
   height: 120px;
   width: 100%;
-  background-color: #4056a1;
-  color: #fff;
+  background-color: $darkblue;
+  color: $white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,34 +12,32 @@ nav {
   z-index: 10;
   position: sticky;
   top: 0;
-}
 
-span {
-  font-family: 'Bungee', cursive;
-  font-size: 2em;
-}
+  span {
+    font-family: 'Bungee', cursive;
+    font-size: 2em;
+  }
 
-#nav-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
+  #nav-container {
+    @include flex-center-col();
+    justify-content: flex-start;
 
-#nav-container #compose-btn {
-  border: none;
-  background-color: transparent;
-  color: white;
-  padding: 15px 20px;
-}
+    #compose-btn {
+      border: none;
+      background-color: transparent;
+      color: $white;
+      padding: 15px 20px;
 
-#nav-container #compose-btn:hover {
-  cursor: pointer;
-  color: #e86252;
-}
+      &:hover {
+        cursor: pointer;
+        color: $coral;
+      }
+    }
 
-#nav-container i {
-  color: white;
+    i {
+      color: $white;
+    }
+  }
 }
 
 /* down arrow animation */
@@ -59,7 +59,7 @@ span {
 /* Tablet - Responsive */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   nav {
-    background-color: #5aa9e6;
+    background-color: $lightblue;
     background-image: url(../images/asfalt-light.png);
   }
 }
