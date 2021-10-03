@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('#tweets-container').empty();
     for (const tweet of tweets) {
       const $newTweet = createTweetElement(tweet);
-      $('#tweets-container').append($newTweet);
+      $('#tweets-container').prepend($newTweet);
     }
   };
 
