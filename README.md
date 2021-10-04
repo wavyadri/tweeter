@@ -6,6 +6,8 @@ This is a front-end project built with jQuery, AJAX, HTML, and SASS interacting 
 
 ## Final Product
 
+!["Share your tweets to your feed! But keep it under 140 characters or else you'll get an error!"](https://github.com/wavyadri/tweeter/blob/master/docs/error.png)
+
 ## Getting Started
 
 1. Fork this repository, then clone your fork of this repository.
