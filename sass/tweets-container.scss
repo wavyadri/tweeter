@@ -47,6 +47,7 @@
   }
 
   // source: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+  // wraps single long string
   .user-tweet {
     padding: 0 1em;
     overflow-wrap: break-word;
