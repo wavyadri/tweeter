@@ -50,10 +50,22 @@ nav #nav-container i {
     bottom: 5px;
   }
 }
-/* Tablet - Responsive */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/* Mobile & Tablet - Responsive */
+@media only screen and (max-width: 1023px) {
   nav {
     background-color: #5aa9e6;
     background-image: url(../images/asfalt-light.png);
+  }
+}
+@media only screen and (max-width: 540px) {
+  nav {
+    justify-content: center;
+  }
+  nav #nav-container {
+    flex-direction: column-reverse;
+  }
+  nav #nav-container p,
+nav #nav-container #compose-btn {
+    display: none;
   }
 }

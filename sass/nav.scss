@@ -56,10 +56,23 @@ nav {
   }
 }
 
-/* Tablet - Responsive */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+/* Mobile & Tablet - Responsive */
+@media only screen and (max-width: 1023px) {
   nav {
     background-color: $lightblue;
     background-image: url(../images/asfalt-light.png);
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  nav {
+    justify-content: center;
+    #nav-container {
+      flex-direction: column-reverse;
+      p,
+      #compose-btn {
+        display: none;
+      }
+    }
   }
 }
