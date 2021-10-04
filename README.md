@@ -6,11 +6,17 @@ This is a front-end project built with jQuery, AJAX, HTML, and SASS interacting 
 
 ## Final Product
 
-!["Share your tweets to your feed! But keep it under 140 characters or else you'll get an error!"](https://github.com/wavyadri/tweeter/blob/master/docs/error.png)
+### Share your tweets to your feed but keep it under 140 characters or else you'll get an error!
 
-!["Made it to the end of your feed? Click to smooth scroll up!"](https://github.com/wavyadri/tweeter/blob/master/docs/scroll.png)
+!["Screenshot of error message"](https://github.com/wavyadri/tweeter/blob/master/docs/error.png)
 
-!["Responsive styles for tablets"](https://github.com/wavyadri/tweeter/blob/master/docs/tablet.png)
+### Made it to the end of your feed? Click to smooth scroll up!
+
+!["Screenshot of scroll to top button"](https://github.com/wavyadri/tweeter/blob/master/docs/scroll.png)
+
+### Responsive styles for mobile and tablets
+
+!["Screenshot of tablet layout](https://github.com/wavyadri/tweeter/blob/master/docs/tablet.png)
 
 ## Getting Started
 
