@@ -78,7 +78,7 @@ $(document).ready(function () {
       });
   });
 
-  // get request
+  // get request - display all tweets
   const loadtweets = () => {
     $('#error-msg').addClass('hide');
 
