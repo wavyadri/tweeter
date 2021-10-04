@@ -48,26 +48,18 @@ $(document).ready(function () {
     e.preventDefault();
 
     // hide error message
-    $('#error-msg').slideUp().addClass('hide').empty();
+    $('#error-msg').slideUp(50).addClass('hide').empty();
 
     // tweet validation
     if ($('#tweet-text').val() === '') {
       const $msg = $('<p>').text('Please enter text for your tweet!');
-      $('#error-msg').append($msg);
-
-      if ($('#error-msg').is(':parent')) {
-        $('#error-msg').slideDown('slow');
-      }
+      $('#error-msg').append($msg).slideDown('slow');
       return;
     }
 
     if ($('#tweet-text').val().length > 140) {
       const $msg = $('<p>').text('Your tweet is too long!');
-      $('#error-msg').append($msg);
-
-      if ($('#error-msg').is(':parent')) {
-        $('#error-msg').slideDown('slow');
-      }
+      $('#error-msg').append($msg).slideDown('slow');
       return;
     }
 
