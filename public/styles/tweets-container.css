@@ -43,6 +43,7 @@
   color: rgba(94, 118, 197, 0.5);
   opacity: 0.5;
   margin-top: 0;
+  text-align: left;
 }
 .single-tweet .user-tweet {
   padding: 0 1em;
