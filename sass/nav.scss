@@ -72,8 +72,11 @@ nav {
       font-size: 1.5em;
     }
     #nav-container {
+      #compose-btn {
+        padding: 0 20px;
+      }
       p {
-        margin-top: 5px;
+        text-align: center;
       }
     }
   }

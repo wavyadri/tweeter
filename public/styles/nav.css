@@ -65,7 +65,10 @@ nav #nav-container i {
   nav span {
     font-size: 1.5em;
   }
+  nav #nav-container #compose-btn {
+    padding: 0 20px;
+  }
   nav #nav-container p {
-    margin-top: 5px;
+    text-align: center;
   }
 }
