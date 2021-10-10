@@ -66,12 +66,14 @@ nav {
 
 @media only screen and (max-width: 540px) {
   nav {
-    justify-content: center;
+    padding: 1rem;
+    height: 100px;
+    span {
+      font-size: 1.5em;
+    }
     #nav-container {
-      flex-direction: column-reverse;
-      p,
-      #compose-btn {
-        display: none;
+      p {
+        margin-top: 5px;
       }
     }
   }

@@ -59,13 +59,13 @@ nav #nav-container i {
 }
 @media only screen and (max-width: 540px) {
   nav {
-    justify-content: center;
+    padding: 1rem;
+    height: 100px;
   }
-  nav #nav-container {
-    flex-direction: column-reverse;
+  nav span {
+    font-size: 1.5em;
   }
-  nav #nav-container p,
-nav #nav-container #compose-btn {
-    display: none;
+  nav #nav-container p {
+    margin-top: 5px;
   }
 }
